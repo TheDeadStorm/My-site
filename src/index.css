@@ -1,0 +1,63 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border-collapse: collapse;
+	background-color: #000000;
+}
+:root {
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+	color-scheme: light dark;
+	color: rgba(255, 255, 255, 0.87);
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.Header {
+	display: flex;
+	width: 100%;
+	border-bottom: 1px solid red;
+	span {
+		display: flex;
+		margin-left: 5px;
+		align-items: center;
+		font-size: 25px;
+		color: rgba(0, 255, 76, 0.8);
+		white-space: nowrap;
+	}
+}
+.Links {
+	display: flex;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.1);
+	width: 100%;
+	color: rgb(25, 25, 25);
+	justify-content: space-evenly;
+	font-size: 25px;
+
+	a {
+		color: rgba(255, 0, 0, 0.8);
+		text-decoration: none;
+		border-left: 1px solid green;
+	}
+	a:hover {
+		color: rgb(255, 255, 255);
+	}
+
+	/* #blink {
+		color: rgb(255, 0, 0);
+		text-shadow: 0 -1px rgba(0, 0, 0, 0.1);
+		animation: pulsate 2s linear infinite;
+	} */
+}
+
+/* @keyframes pulsate {
+	50% {
+		color: #960000;
+		text-shadow: 0 -1px rgba(0, 0, 0, 0.3), 0 0 5px rgb(0, 0, 0),
+			0 0 8px #000000;
+	}
+} */
