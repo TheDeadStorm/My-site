@@ -3,6 +3,6 @@ import { defineConfig } from 'vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-	base: '/react__page/',
+	base: 'react__page',
 	plugins: [react()],
 })
