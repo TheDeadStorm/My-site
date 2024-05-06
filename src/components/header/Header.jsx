@@ -13,9 +13,9 @@ export default function Header() {
 				/>
 			</div>
 			<div className='header__links'>
-				<Link to='/'>Home</Link>
-				<Link to='/future'>FAQ</Link>
-				<Link to='/contacts'>Contacts</Link>
+				<Link to='/react__page/'>Home</Link>
+				<Link to='/react__page/future'>FAQ</Link>
+				<Link to='/react__page/contacts'>Contacts</Link>
 			</div>
 			<Theme />
 		</header>
