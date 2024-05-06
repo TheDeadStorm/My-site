@@ -1,29 +1,33 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { Provider } from 'react-redux'
+import { Link, RouterProvider, createBrowserRouter } from 'react-router-dom'
+import Future from '../src/pages/future/Future'
+import { store } from './features/store/store'
 import './index.css'
-import AppPage from './pages/AppPage'
-import GamePage from './pages/GamePage'
-import MainPage from './pages/MainPage'
+import Contacts from './pages/contacts/Contacts'
+import Main from './pages/main/Main'
 
 const router = createBrowserRouter([
 	{
 		path: '/',
-		element: <MainPage />,
-		errorElement: 'Go back exile',
+		element: <Main />,
+		errorElement: <Link to='/'>Back to home</Link>,
 	},
 	{
-		path: 'game',
-		element: <GamePage />,
+		path: 'contacts',
+		element: <Contacts />,
 	},
 	{
-		path: 'app',
-		element: <AppPage />,
+		path: 'future',
+		element: <Future />,
 	},
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 	<React.StrictMode>
-		<RouterProvider router={router} />
+		<Provider store={store}>
+			<RouterProvider router={router} />
+		</Provider>
 	</React.StrictMode>
 )
