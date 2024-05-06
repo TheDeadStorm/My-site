@@ -10,16 +10,16 @@ import Main from './pages/main/Main'
 
 const router = createBrowserRouter([
 	{
-		path: '/',
+		path: 'react__page/',
 		element: <Main />,
 		errorElement: <Link to='/'>Back to home</Link>,
 	},
 	{
-		path: 'contacts',
+		path: 'react__page/contacts',
 		element: <Contacts />,
 	},
 	{
-		path: 'future',
+		path: 'react__page/future',
 		element: <Future />,
 	},
 ])
